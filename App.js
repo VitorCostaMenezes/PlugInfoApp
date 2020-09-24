@@ -14,7 +14,7 @@ import Projetos from './src/pages/Projetos/index';
 
 const Stack = createStackNavigator();
 
-      
+       
 
 export default function App () {
   

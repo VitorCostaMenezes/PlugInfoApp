@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity, TouchableNativeFeedback} from 'react-native';
 import { useNavigation, StackActions } from '@react-navigation/native'; 
 import { enviaDados } from '../Dados/index'
 
@@ -15,6 +15,8 @@ export default function Home ({route}) {
 
     const dados = enviaDados()
 
+
+
     // const dados = JSON.parse(enviaDados());
 
     // const teste = dados.map(({nome}) => {
@@ -25,6 +27,11 @@ export default function Home ({route}) {
 
     // const testando = JSON.stringify(teste[0].nome)
 
+
+//ESTADO GLOBAL
+
+//CONTEXT API
+//FFERRAMENTA DE GERENCIAMENTO DE ESTADO GLOBAL   (REDUX, MOBIEX)
 
 
   
@@ -47,6 +54,7 @@ export default function Home ({route}) {
         {/* <Text style={styles.textoInfo}>Nome: {route.params?.nome} </Text> */}
         <Text style={styles.textoInfo}>Nome: {info} </Text>
         <Text style={styles.textoInfo}>Email: {route.params?.email} </Text>
+
 
 
         <View style={styles.btnAreaInfo}>

@@ -22,7 +22,8 @@ function armazenaDados(nome, sobrenome, email, senha) {
 // }
 
 function enviaDados (){
-    return JSON.stringify(dados);
+    // return JSON.stringify(dados);
+    return dados;
 }
 
 export {armazenaDados, enviaDados};
